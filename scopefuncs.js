@@ -16,16 +16,6 @@ console.log("This house is not nice!".filter('not'));
 
 //Exercise 2:
 Array.prototype.bubbleSort = function(){
-    // const temp = this[0];
-
-    // for(let i = 0; i < this.length; i++){
-    //     if (this[i+1] < this[i]){
-    //         let temp = this[i];
-    //           this[i] = this[i+1];
-    //           this[i+1] = temp;
-    //     }
-    //
-    // }
 
     for(let i = 0; i < this.length; i++){
         for (let j = i+1; j < this.length; j++){
@@ -40,3 +30,14 @@ Array.prototype.bubbleSort = function(){
     return this;
 };
 console.log([6,4,0, 3,-2,1].bubbleSort());
+
+//Exercise 3
+function Person() {
+
+}
+Person.prototype.name = "";
+Person.prototype.subject = "";
+const teacher = new Person();
+teacher.teach = function (subject) {
+    
+}
