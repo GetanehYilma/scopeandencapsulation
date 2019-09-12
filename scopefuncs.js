@@ -35,9 +35,10 @@ console.log([6,4,0, 3,-2,1].bubbleSort());
 function Person() {
 
 }
-Person.prototype.name = "";
-Person.prototype.subject = "";
+Person.prototype.name = "Abebe";
+// Person.prototype.subject = "";
 const teacher = new Person();
 teacher.teach = function (subject) {
-    
+    return (this.name + " is now teaching " + subject);
 }
+console.log(teacher.teach("Math"));
